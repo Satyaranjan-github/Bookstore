@@ -1,0 +1,19 @@
+.contact{
+    background-image: url(../public/contact.png);
+    background-color: rgba(102, 130, 187, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:100px;
+    border-radius: 10px;
+}
+.card input{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
