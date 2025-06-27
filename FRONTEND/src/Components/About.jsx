@@ -7,6 +7,7 @@ import p1 from "../../public/p1.png";
 import p2 from "../../public/p2.png";
 import p3 from "../../public/p3.png";
 import { ReactTyped } from "react-typed";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -171,7 +172,9 @@ const About = () => {
     <h2 className="card-title">Sarah Thompson, Founder & CEO: </h2>
     <p> With a background in literature and a lifelong love of books, Sarah leads Book Haven with a vision for community and connection.</p>
     <div className="card-actions justify-end">
+      <Link to="/contact">
       <button className="bg-red-500 text-white px-3 py-2 rounded-md hover:bg-white hover:text-black hover:border hover:border-black cursor-pointer">Contact</button>
+      </Link>
     </div>
   </div>
 </div>
@@ -181,7 +184,9 @@ const About = () => {
     <h2 className="card-title">James Allen, Head of Customer Experience:</h2>
     <p>James ensures that every customer interaction is positive, overseeing our customer service and outreach programs.</p>
     <div className="card-actions justify-end">
+      <Link to="/contact">
       <button className="bg-red-500 text-white px-3 py-2 rounded-md hover:bg-white hover:text-black hover:border hover:border-black cursor-pointer">Contact</button>
+      </Link>
     </div>
   </div>
 </div>
@@ -191,7 +196,9 @@ const About = () => {
     <h2 className="card-title">Emily Ramirez, Senior Buyer:</h2>
     <p> Emily curates our book selection, working tirelessly to bring in both bestsellers and hidden gems.</p>
     <div className="card-actions justify-end">
+      <Link to="/contact">
       <button className="bg-red-500 text-white px-3 py-2 rounded-md hover:bg-white hover:text-black hover:border hover:border-black cursor-pointer">Contact</button>
+      </Link>
     </div>
   </div>
 </div>
