@@ -1,15 +1,15 @@
-import React from 'react'
-import Home from './Home/Home'
-import { Navigate, Routes, Route } from 'react-router-dom'
-import Courses from './Courses/Courses'
-import Signup from './Components/Signup'
-import Login from './Components/Login'
-import Contacts from './Contacts/Contacts'
-import CART from './CART/CART'
 import { Toaster } from 'react-hot-toast'
-import { useAuth } from './context/AuthProvider'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import Abouts from './Abouts/Abouts'
+import CART from './CART/CART'
 import Checkouts from './Checkouts/Checkouts'
+import Login from './Components/Login'
+import Signup from './Components/Signup'
+import Contacts from './Contacts/Contacts'
+import { useAuth } from './context/AuthProvider'
+import Courses from './Courses/Courses'
+import Home from './Home/Home'
+import NetworkStatusChecker from './hooks/useNetworkStatus'
 import Profiles from './Profiles/Profiles'
 
 const App = () => {
@@ -18,6 +18,7 @@ const App = () => {
 
   return (
     <>
+      <NetworkStatusChecker />
       <div>
         <Routes>
           <Route>
